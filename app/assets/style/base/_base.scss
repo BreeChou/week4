@@ -1,0 +1,22 @@
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+a {
+    display: block;
+	text-decoration: none;
+}
+
+ul {
+	li {
+		a {
+			color: $light;
+			font-size: 20px;
+			font-weight: 300;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}

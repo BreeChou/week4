@@ -1,0 +1,298 @@
+
+.section-1 {
+    height: 100vh;
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include pad {
+        background-image: url(../images/home-header-sm.png);
+    }
+    .title {
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        a {
+            display: inline-block;
+            font-size: 20px;
+            padding: 6px 12px;
+            color: $light;
+            background: $primary;
+            &:hover {
+                background: $secondary;
+            }
+        }
+    }
+}
+.section-2 {
+    background-color: $tertiary;
+    padding: 80px 0;
+    @include mobile {
+        padding: 40px 0;
+    }
+    h4 {
+        text-align: center;
+    }
+    .card {
+        margin-top: 32px;
+        gap: 24px;
+        @include pad {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 336px;
+            flex-direction: column;
+            img {
+                width: 84px;
+                height: 84px;
+            }
+            .text {
+                text-align: center;
+                h5 {
+                    margin: 8px 0;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.section-3 {
+    padding: 80px 0;
+    @include mobile {
+        padding: 40px 0;
+    }
+    h4 {
+        text-align: center;
+    }
+    .card {
+        margin-top: 32px;
+        gap: 24px;
+        @include pad {
+            flex-direction: column;
+        }
+        @include pad {
+            
+        }
+        li {
+            width: 416px;
+            @include pad {
+                width: 336px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            &:hover {
+                box-shadow: 1px 1px 20px  rgb(148, 148, 148);
+            }
+            a {
+                text-align: center;
+                padding: 8px;
+                font-size: 48px;
+                font-weight: 900;
+                color: $primary;
+                font-style: italic;
+            }
+        }
+    }
+}
+.section-4 {
+    background-image: url(../images/index-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    @include pad {
+        background-image: url(../images/index-bg-md.png);
+    }
+    @include mobile {
+        padding: 40px 0;
+        background-image: url(../images/index-bg-sm.png);
+    }
+    h4 {
+        text-align: center;
+        color: $light;
+    }
+    .card {
+        margin-top: 32px;
+        justify-content: center;
+        gap: 24px;
+        @include pad {
+            flex-direction: column;
+        }
+        li {
+            width: 416px;
+            background: $light;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            
+            img {
+                @include mobile {
+                    display: none;
+                    
+                }
+            }
+            .sm {
+                display: none;
+                @include mobile {
+                    display: block;
+                    width: 100%;
+                }
+                
+            }
+            a {
+                text-align: center;
+                padding: 8px;
+                font-size: 48px;
+                font-weight: 900;
+                color: $primary;
+                font-style: italic;
+            }
+        }
+    }
+}
+.section-5 {
+    padding: 80px 0;
+    @include mobile {
+        padding: 40px 0;
+    }
+    h4 {
+        text-align: center;
+    }
+    .card {
+        margin-top: 32px;
+        gap: 24px;
+        @include pad {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @include mobile {
+            gap: 16px;
+        }
+        li {
+            border: 1px solid #DEE2E6;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px  #00000029;
+            width: 336px;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            @include mobile {
+                width: 100%;
+            }
+            
+            .text {
+                height: 205px;
+                padding: 16px;
+                p {
+                    text-align: justify;
+                    font-size: 16px;
+                    font-weight: 500;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+            .date {
+                padding-left: 16px;
+                padding-bottom: 16px;
+                font-size: 14px;
+                text-align: left;
+                color: $gray;
+            }
+        }
+    }
+}
+
+.section-6 {
+    background-color: $tertiary;
+    padding: 80px 0;
+    @include mobile {
+        padding: 40px 0;
+    }
+    .w-636  {
+        max-width: 636px;
+        margin: 0 auto;
+        @include pad {
+            max-width: 576px;
+        }
+        @include mobile {
+            padding: 0 14px;
+            width: 100%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 24px;
+            p {
+                text-align: left;
+                font-size: 20px;
+                @include pad {
+                    font-size: 16px;
+                    margin-top: 24px;
+                }
+                @include mobile {
+                    font-size: 16px;
+                    margin-top: 24px;
+                }
+            }
+        }
+        form {
+            
+            input {
+                width: 100%;
+                height: 36px;
+                background-color: transparent;
+                border: 1px solid #00000029;
+                @include pad {
+                    margin-bottom: 16px;
+                }
+                @include mobile {
+                    margin-bottom: 16px;
+                }
+            }
+            .massege {
+                width: 100%;
+                height: 136px;
+                background-color: transparent;
+                border: 1px solid #00000029;
+            }
+            .checkBoxInput {
+                width: 24px;
+                height: 24px;
+            }
+            .checkBox {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                @include mobile {
+                    align-items: flex-start;
+                    margin-top: 16px;
+                }
+            }
+            .sent {
+                margin: 0 110px;
+                width: 416px;
+                height: 56px;
+                font-size: 16px;
+                color: $light;
+                border: none;
+                background-color: $primary;
+                @include pad {
+                    width: 336px;
+                }
+                @include mobile {
+                    width: 100%;
+                    margin: 0 ;
+                }
+                
+            }
+            
+        }
+    }
+}

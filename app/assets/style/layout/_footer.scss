@@ -1,0 +1,119 @@
+.footer {
+    background-color: $primary;
+    .nav {
+        padding-top: 48px;
+        @include mobile {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+            align-items: start;
+            padding-top: 24px;
+        }
+        .top {
+            justify-content: space-between;
+            .nav-list {
+                gap: 48px;
+                @include mobile {
+                    display: none;
+                }
+                a {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $light;
+                }
+            }
+            .mediasocial-icon {
+                gap: 32px;
+                @include pad {
+                    gap: 16px;
+                }
+                @include mobile {
+                    gap: 8px;
+                }
+                li {
+                    width: 48px;
+                    height: 48px;
+                    @include pad {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @include mobile {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        .contact {
+            margin-top: 33px;
+            padding-bottom: 32px;
+            @include mobile {
+                margin-top: 0px;
+                padding-bottom: 24px;
+            }
+            li {
+                .material-symbols-outlined {
+                    color: $light;
+                    font-size: 40px;
+                    padding-right: 22px;
+                    @include mobile {
+                        font-size: 20px;
+                        padding-right: 11px;
+                    }
+                }
+                a {
+                    font-weight: 300;
+                    font-size: 36px;
+                    @include mobile {
+                        font-size: 16px;
+                    }
+                }
+                &:first-child {
+                    margin-bottom: 22px;
+                    @include pad {
+                        margin-bottom: 28px;
+                    }
+                    @include mobile {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        justify-content: space-between;
+        padding: 32px 0;
+        @include pad {
+            padding-bottom: 40px;
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: start;
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+        p {
+            font-size: 14px;
+            color: $light;
+            @include pad {
+                font-size: 16px;
+            }
+        }
+        ul {
+            gap: 48px;
+            @include mobile {
+                flex-direction: column;
+                align-items: start;
+                margin-top: 8px;
+                gap: 8px;
+            }
+            a {
+                font-size: 14px;
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.header {
+    background-color: $primary;
+    .nav {
+        position: relative;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
+        h1 {
+            a {
+                width: 80px;
+                height: 48.57px;
+                background-image: url(../images/logo-white.png);
+                background-size: cover;
+                overflow: hidden;
+                white-space: nowrap;
+                text-indent: 101%;
+                
+            }
+        }
+        &-list {
+            width: 492px;
+            justify-content: space-between;
+            
+            @include mobile {
+                display: none;
+            }
+        }
+        .ham-icon {
+            display: none;
+            position: absolute;
+            right: 13px;
+            .material-symbols-outlined {
+                font-size: 40px;
+                color: $light;
+            }
+            @include mobile {
+                display: block;
+            }
+        }
+        .ham-list {
+            text-align: center;
+            display: none;
+            position: absolute;
+            font-size: 30px;
+            right: 0;
+            top: 100%;
+            width: 100%;
+            max-height: 0px;
+            overflow: hidden;
+            z-index: 120;
+            transform: 0.5s;
+            @include mobile {
+                display: block;
+            }
+            a {
+                background: $primary;
+                color: $light;
+                border-top: 1px solid #FFFFFF;
+                padding: 20px 0;
+                &:hover {
+                    opacity: 1;
+                    background-color: $dark-red;
+                }
+            }
+        }
+        .ham-list.active {
+            max-height: 500px;
+        }
+    }
+}

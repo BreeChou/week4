@@ -1,0 +1,50 @@
+.container {
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+    @include pad {
+        padding: 0 36px;
+    }
+    @include mobile {
+        padding: 0 13px;
+    }
+    
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: $dark-red;
+    @include mobile {
+        font-size: 24px;
+    }
+}
+h3 {
+    font-size: 36px;
+    color: $dark-red;
+    @include mobile {
+        font-size: 16px;
+    }
+}
+h4 {
+    font-size: 48px;
+    font-weight: 600;
+    color: $dark-red;
+    @include mobile {
+        font-size: 24px;
+    }
+}
+h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $dark-red;
+
+}
+.mb-8 {
+    margin-bottom: 8px;
+}

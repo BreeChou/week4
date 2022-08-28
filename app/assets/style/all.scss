@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+@import "./base/reset";
+@import "./helpers/mixin";
+@import "./helpers/variable";
+@import "./base/base";
+@import "./helpers/layout";
+@import "./layout/header";
+@import "./layout/footer";
+
+
+
+// pages-------------------
+@import "./pages/index";
+@import "./pages/store-1";
