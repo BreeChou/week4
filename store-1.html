@@ -1,10 +1,44 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container d-flex">
+      <h1>
+        <a href="./index.html">首頁</a>
+      </h1>
+      <!-- PC選單 -->
+      <ul class="nav-list d-flex">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="./store-1.html">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+
+      <!-- 漢堡選單 -->
+      <a href="#" class="ham-icon">
+        <span class="material-symbols-outlined ">menu</span>
+      </a>
+      <ul class="ham-list">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
 
 
 <section class="store">
@@ -171,3 +205,55 @@ current: index
     </div>
     
 </section>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav">
+        <div class="top d-flex">
+          <ul class="nav-list d-flex">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class="mediasocial-icon d-flex">
+            <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_line.png" alt=""></a></a></li>
+          </ul>
+        </div>
+        <ul class="contact">
+          <li class="d-flex">
+            <span class="material-symbols-outlined">
+              call
+            </span>
+            <a href="#">
+              0800-000-00
+            </a>
+          </li>
+          <li class="d-flex">
+            <span class="material-symbols-outlined">
+              mail
+            </span>
+            <a href="#">
+              glasses@business.co
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <div class="copyright d-flex">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="d-flex">
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
